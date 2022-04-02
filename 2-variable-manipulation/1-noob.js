@@ -14,3 +14,14 @@ const testItems = [
   { price: 20, quan: 1 },
   { price: 5, quan: 4 },
 ];
+
+// console.log(calculateTotal());
+// console.log(calculateTotal(testItems));
+// console.log(calculateTotal(undefined, {}));
+// console.log(calculateTotal([], {}));
+
+console.log(calculateTotal([], {}));
+console.log(calculateTotal(testItems, {}));
+console.log(calculateTotal(testItems, { ship: 0 }));
+console.log(calculateTotal(testItems, { dis: 0.75 }));
+console.log(calculateTotal(testItems, { ship: 12 }));
