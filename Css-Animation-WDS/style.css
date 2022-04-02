@@ -8,15 +8,16 @@
     background-color: red;
     height: 50%;
     width: 50%;
-    transition: transform 1s ease-in;
+    animation: left-to-right 1s ease-in forwards infinite alternate;
 }
 
 .parent:hover .child {
-    animation: left-to-right 1s ease-in forwards;
+    animation-play-state: paused;
 }
 
 @keyframes left-to-right {
     0% {
+        background-color: red;
         transform: translateX(0);
     }
     33% {
@@ -26,6 +27,7 @@
         transform: translateX(100%) translateY(100%);
     }
     100% {
+        background-color: green;
         transform: translateX(100%);
     }
 }
