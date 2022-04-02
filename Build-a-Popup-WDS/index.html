@@ -9,11 +9,11 @@
     <title>Build a Popup</title>
   </head>
   <body>
-    <button>Open Modal</button>
-    <div class="modal" id="modal">
+    <button data-modal-target="#modal">Open Modal</button>
+    <div class="modal active" id="modal">
       <div class="modal-header">
-          <div class="title">Example Modal</div>
-          <button class="close-button">&times;</button>
+        <div class="title">Example Modal</div>
+        <button data-close-button class="close-button">&times;</button>
       </div>
       <div class="modal-body">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt nulla
@@ -27,6 +27,6 @@
         mollitia amet laborum reiciendis?
       </div>
     </div>
-    <div class="overlay"></div>
+    <div class="active" id="overlay"></div>
   </body>
 </html>
