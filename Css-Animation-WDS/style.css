@@ -23,6 +23,9 @@
     33% {
         transform: translateY(100%);
     }
+    50% {
+        background-color: blue;
+    }
     66% {
         transform: translateX(100%) translateY(100%);
     }
