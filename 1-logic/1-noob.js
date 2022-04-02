@@ -1,8 +1,19 @@
+// * Before
+// const toAccounting = (n) => {
+//     if (n < 0) {
+//         return `(${Math.abs(n)})`;
+//     } else if (n >= 0) {
+//         return n;
+//     }
+// };
+
+// * After
+
 const toAccounting = (n) => {
   if (n < 0) {
     return `(${Math.abs(n)})`;
-  } else if (n >= 0) {
-    return n;
+  } else {
+    return n.toString();
   }
 };
 
